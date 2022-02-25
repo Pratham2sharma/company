@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive website</title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" 
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+     <nav>
+       <a href="index.html"><img src="images\logo.jpg" width="100px"></a>  
+       <div class="nav-links" id="navLinks">
+        <i class="fa fa-times"onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Services.html">SERVICES</a></li>
+                <li><a href="Blog.html">BLOG</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+           </ul>
+        </div>
+        <i class="fa fa-caret-square-o-down"onclick="showMenu()"></i>   
+     </nav>
+       <h1>Our Services</h1>
+    </section>
+ <!-------------Services--------->
+ <section class="Services">
+    <h1>Services We Offer</h1>
+    <p></p>
+    <div class="row">
+        <div class="service-col">
+            <h3>intermediate</h3>
+            <p> We provide best of the best services to our clients.</p>
+        </div>
+        <div class="service-col">
+            <h3>front-end development</h3>
+            <p>We have best front-end developers in our team.</p>
+        </div>
+        <div class="service-col">
+            <h3>Static Websites</h3>
+            <p>Our team has a mastery in making Static Websites to our clients.</p>
+        </div>
+    </div>
+</section>
+<!------facilities--------->
+<section class="facilities">
+    <h1>Our facilities</h1>
+      <div class="row">
+          <div class="facilities-col">
+              <img src="images\office.jpg">
+              
+              <h3>office space</h3>
+              
+          </div>
+          <div class="facilities-col">
+            <img src="images\office1.png">
+            
+            <h3>office cubicles</h3>
+            
+        </div>
+        <div class="facilities-col">
+            <img src="images\canteen.jpg">
+            
+            <h3>canteen</h3>
+            
+        </div>
+      </div>
+</section>   
+ 
+ 
+ <!-------------Footer----------->
+ <section class="footer">
+    <h4>About Us</h4>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made by Pratham Sharma</p>
+
+
+ </section>         
+
+
+
+
+
+<!------javascript for toggle menu------->    
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        
+    }
+</script>
+
+</body>
+</html>
